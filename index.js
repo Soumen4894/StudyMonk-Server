@@ -21,15 +21,14 @@ database.connect();
 //middlewares
 app.use(express.json());
 app.use(cookieParser());
-// app.use(
-// 	cors(
-// 		//{
-// 		//origin:"http://localhost:3000",
-// 		//credentials:true,
-// 	//}
-// )
-// )
-app.use(cors());
+
+app.use(cors({
+    origin:'https://study-monk-client-tq27.vercel.app/', 
+    credentials:true,           
+    optionSuccessStatus:200
+}));
+
+
 app.use(function (req, res, next) {
 	res.header("Access-Control-Allow-Origin", "*");
 	res.header(
