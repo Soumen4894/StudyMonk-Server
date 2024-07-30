@@ -27,13 +27,7 @@ app.use(cookieParser());
 //     credentials:true,           
 //     optionSuccessStatus:200
 // }));
-app.use(cors(
-	//{
-    // origin:'https://study-monk-client-tq27.vercel.app/', 
-    // credentials:true,           
-    // optionSuccessStatus:200
-//}
-));
+app.use(cors());
 
 
 app.use(function (req, res, next) {
