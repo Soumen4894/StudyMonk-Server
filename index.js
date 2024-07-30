@@ -22,11 +22,18 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 
-app.use(cors({
-    origin:'https://study-monk-client-tq27.vercel.app/', 
-    credentials:true,           
-    optionSuccessStatus:200
-}));
+// app.use(cors({
+//     origin:'https://study-monk-client-tq27.vercel.app/', 
+//     credentials:true,           
+//     optionSuccessStatus:200
+// }));
+app.use(cors(
+	//{
+    // origin:'https://study-monk-client-tq27.vercel.app/', 
+    // credentials:true,           
+    // optionSuccessStatus:200
+//}
+));
 
 
 app.use(function (req, res, next) {
