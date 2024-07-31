@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin:'study-monk-client-tq27.vercel.app',
+    origin:'https://study-monk-client-tq27.vercel.app/',
 	//origin:'*', 
     credentials:true,           
     optionSuccessStatus:200
