@@ -23,8 +23,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		// origin:"https://study-monk-client.vercel.app",
-		origin:"http://localhost:3000",
+		origin:"https://study-monk-client.vercel.app",
+		//origin:"http://localhost:3001",
 		credentials:true,
 	})
 )
